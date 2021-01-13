@@ -15,81 +15,199 @@
       type="image/x-icon"
       href="https://devchallenges.io/"
     />
-
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="styles.css" />
 
-    <title>Devchallenges</title>
-
-    <style>
-      body {
-        font-family: "Poppins", sans-serif;
-      }
-
-      ul {
-        padding-left: 24px;
-      }
-
-      li {
-        margin-bottom: 8px;
-      }
-
-      .welcome {
-        max-width: 800px;
-        margin: 0 auto;
-      }
-
-      .welcome-text {
-        margin-top: 30vh;
-        font-weight: 500;
-      }
-
-      .welcome-text p {
-        font-size: 1rem;
-        font-weight: 400;
-      }
-
-      .welcome-text h1 {
-        font-size: 1.5rem;
-      }
-
-      .welcome-text a {
-        color: #f7542e;
-      }
-    </style>
+    <title>Edie Homepage -Devchallenges</title>
   </head>
-  <body>
-    <div class="welcome">
-      <div class="welcome-text">
-        <h1>
-          Welcome to
-          <a href="https://devchallenges.io/" target="_blank"
-            >devchallenges.io</a
-          >
-        </h1>
-
-        <p>
-          If you have any questions, don't hesitate to ask on Discord. Here are
-          7 general steps to complete the challenge:
+  <body id="home">
+    <main>
+      <nav>
+        <div class="brand">Edie</div>
+        <div class="nav-links">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#work">Our Works</a></li>
+            <li><a href="#clients">Clients</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="menu">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </nav>
+      <header>
+        <p class="subtitle blue">Unhappy with your website?</p>
+        <p class="title">We create beautiful and fast web services</p>
+      </header>
+      <section class="img-container">
+        <img src="heroImage.jpg" alt="" />
+      </section>
+      <section class="story">
+        <p class="title">Story, emotion and purpose</p>
+        <p class="subtitle">
+          We help transform your ideas into real world applications that will
+          outperform your toughest competition and help you achieve your
+          strategic goals in short period of time.
         </p>
+      </section>
+      <form action="#">
+        <label for="email">Want us to contact you?</label>
+        <input type="email" name="email" id="email" placeholder="Email" />
+        <div class="joinBtn">Join</div>
+      </form>
+      <section id="services" class="hero">
+        <p class="title">We offer high demand services</p>
+      </section>
+      <div class="service-wrapper">
+        <section class="services ui-design">
+          <span class="material-icons blueBtn btn"> edit </span>
+          <h2>UI/UX Design</h2>
+          <p class="subtitle">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
+            metus ac nulla consequat aliquet id quis turpis.
+          </p>
+          <button class="getStarted">Get started</button>
+        </section>
+        <section class="services front-end">
+          <span class="material-icons greenBtn btn"> code </span>
+          <h2>Front End</h2>
+          <p class="subtitle">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
+            metus ac nulla consequat aliquet id quis turpis.
+          </p>
+          <button class="getStarted">Get started</button>
+        </section>
+        <section class="services back-end">
+          <span class="material-icons redBtn btn"> list </span>
+          <h2>Back End</h2>
+          <p class="subtitle">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
+            metus ac nulla consequat aliquet id quis turpis.
+          </p>
+          <button class="getStarted">Get started</button>
+        </section>
       </div>
 
-      <ul>
-        <li><b>Step 1:</b> Create a new repository on github</li>
-        <li><b>Step 2:</b> Copy resources, README.md to your repository</li>
-        <li>
-          <b>Step 3:</b> Login to Figma to checkout font, color, spacing,..
-        </li>
-        <li><b>Step 4:</b> Complete all user stories</li>
-        <li><b>Step 5:</b> Update README.md</li>
-        <li><b>Step 6:</b> Deploy your app and submit your solution</li>
-        <li>
-          <b>Step 7:</b> Share your solution on Discord, Twitter and other
-          platforms to ask for feedback
-        </li>
-      </ul>
+      <section id="work" class="services">
+        <h2>Good design means good business</h2>
+      </section>
+      <div class="showcase">
+        <section class="apps">
+          <div class="img-container">
+            <img src="smarthome.jpg" alt="" />
+          </div>
+          <footer>
+            <div class="subtitle">Full stack application</div>
+            <h3>Smart home dashboard</h3>
+          </footer>
+        </section>
+        <section class="apps">
+          <div class="img-container">
+            <img src="onboard.png" alt="" />
+          </div>
+          <footer>
+            <div class="subtitle">US/UI design</div>
+            <h3>Onboard application</h3>
+          </footer>
+        </section>
+        <section class="apps">
+          <div class="img-container">
+            <img src="booking.png" alt="" />
+          </div>
+          <footer>
+            <div class="subtitle">Mobile application</div>
+            <h3>Booking system</h3>
+          </footer>
+        </section>
+        <section class="apps">
+          <div class="img-container">
+            <img src="juice-product.png" alt="" />
+          </div>
+          <footer>
+            <div class="subtitle">Front End application</div>
+            <h3>Juice product homepage</h3>
+          </footer>
+        </section>
+      </div>
+      <section class="more">
+        <h3 class="blue">
+          see more <span class="material-icons"> arrow_right_alt </span>
+        </h3>
+      </section>
+
+      <section class="meet-the-team">
+        <div class="team">
+          <h3 class="red">Meet the team</h3>
+          <h1>We are chilled and a laidback team</h1>
+          <p class="title">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+
+        <div class="gallery">
+          <img src="person1.png" alt="" />
+          <img src="person2.png" alt="" />
+          <img src="person3.png" alt="" />
+        </div>
+      </section>
+
+      <section id="clients" class="testimony">
+        <p class="title">
+          “Fast and outstanding resutls. Edie understands their customer’s
+          needs. They have a young and talented team.”
+        </p>
+        <footer>
+          <img src="person4.png" alt="" />
+          <div class="author">
+            <h3 class="title">Carlos Tran</h3>
+            <p class="subtitle">The Decorate Gatsby</p>
+          </div>
+        </footer>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="nav-links">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#work">Our Works</a></li>
+            <li><a href="#clients">Clients</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h1 class="brand">Edie</h1>
+          <div class="social">
+            <img src="instagram.svg" alt="" />
+            <img src="linkedin.svg" alt="" />
+            <img src="twitter.svg" alt="" />
+          </div>
+        </div>
+        <form id="contact" action="#">
+          <label for="email">Want us to contact you?</label>
+          <input type="email" name="email" id="email" placeholder="Email" />
+          <div class="joinBtn">Join</div>
+        </form>
+      </div>
+    </footer>
+
+    <div class="attribution">
+      <p>
+        <a href="https://portfolio.devchallenges.io/EzequielCaste"
+          >@EzequielCaste</a
+        >
+      </p>
     </div>
+    <script src="main.js"></script>
   </body>
 </html>
